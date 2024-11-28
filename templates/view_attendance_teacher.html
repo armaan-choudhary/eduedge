@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>All Student Attendance Records</h2>
+<table>
+    <tr>
+        <th>Student</th>
+        <th>Date</th>
+        <th>Status</th>
+    </tr>
+    {% for student in students %}
+        {% set attendance_records = get_attendance_by_user(student[0]) %}
+        {% for record in attendance_records %}
+        <tr>
+            <td>{{ student[1] }}</td>
+            <td>{{ record[0] }}</td>
+            <td>{{ record[1] }}</td>
+        </tr>
+        {% endfor %}
+    {% endfor %}
+</table>
+{% endblock %}

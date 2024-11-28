@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Teacher Dashboard</h2>
+<p>Welcome, {{ username }}!</p>
+<a href="{{ url_for('attendance.attendance') }}">Edit/View Student Attendance</a>
+<a href="{{ url_for('attendance.view_student_attendance') }}">View All Student Attendance</a>
+<a href="{{ url_for('dashboard.attendance_graph') }}">View Attendance Graph</a> <!-- New link -->
+{% endblock %}

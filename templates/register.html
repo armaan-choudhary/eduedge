@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="formWrapper">
+    <h2>Register</h2>
+    <form method="POST">
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" name="firstname"><br>
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lastname"><br>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+        <label for="role_id">Role:</label>
+        <select id="role_id" name="role_id" class="roleSelect">
+            <option value="1">Student</option>
+            <option value="2">Teacher</option>
+        </select><br>
+        <button type="submit">Register</button>
+    </form>
+</div>
+{% endblock %}

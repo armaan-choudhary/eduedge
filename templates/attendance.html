@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Manage Attendance</h2>
+<form method="POST">
+    <label for="user_id">Student:</label>
+    <select id="user_id" name="user_id">
+        {% for student in students %}
+            <option value="{{ student[0] }}">{{ student[1] }}</option>
+        {% endfor %}
+    </select><br>
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date" required><br>
+    <label for="status">Status:</label>
+    <select id="status" name="status">
+        <option value="Present">Present</option>
+        <option value="Absent">Absent</option>
+    </select><br>
+    <button type="submit">Update Attendance</button>
+</form>
+{% endblock %}

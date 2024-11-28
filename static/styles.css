@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+   font-family: "Montserrat", sans-serif;
+}
+
+*::selection {
+   background-color: #11111110;
+}
+
+header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1rem 3rem;
+}
+a {
+   text-decoration: none;
+   color: #fff;
+   font-weight: 700;
+   margin: 1rem 0;
+}
+
+.getStarted {
+   margin: 2rem;
+   background-color: #111;
+   color: #fff;
+   padding: 0.75rem 4rem;
+   border-radius: 10rem;
+   font-size: 1.5rem;
+   font-weight: 500;
+}
+h2{
+   font-size: 4rem;
+   line-height: 3.5rem;
+   letter-spacing: -2px;
+   margin: 0;
+   /* text-transform: uppercase; */
+}
+.formWrapper {
+   align-self: center;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   background-color: #ffffff50;
+   padding: 2.5rem 0;
+   width: 30%;
+   border-radius: 1rem;
+}
+form {
+   margin: 1rem 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+}
+label {
+   margin-top: 0.5rem;
+   text-align: left;
+   font-weight: 600;
+}
+input {
+   margin: 1rem;
+   padding: 1rem;
+   width: 70%;
+}
+select {
+   padding: 1rem;
+   width: 72%;
+}
+.roleSelect {
+   width: 30%;
+   padding: 1rem;
+   font-size: 1rem;
+}
+button {
+   width: 50%;
+   font-size: 1.5rem;
+   padding: 0.5rem 2rem;
+   border-radius: 10rem;
+   background-color: #111;
+   color: #fff;
+}
+button:hover {
+   filter: brightness(1.5);
+}
+body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   background-color: #f4f4f4;
+   text-align: center;
+   background: url("../static/images/background.png");
+   background-repeat: no-repeat;
+   object-fit: cover;
+   min-height: 100vh;
+}
+
+nav a {
+   color: #111;
+   margin: 0 1rem;
+   text-decoration: none;
+   font-size: 1.5rem;
+   font-weight: 400;
+}
+
+nav a:hover {
+   transition: 1s;
+   border-bottom: 2px dashed #111;
+}
+
+nav {
+   display: flex;
+   align-items: center;
+}
+
+.logo {
+   height: 2.5rem;
+   margin-right: 1rem;
+}
+
+.logoAnchor {
+   font-size: 2.5rem;
+   color: #111;
+}
+
+main {
+   padding: 2rem;
+   /* background-color: #ff505050; */
+   height: 80vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+table {
+   padding: 1rem;
+}
+th {
+   font-size: 2rem;
+}
+td {
+   padding: 1rem;
+   font-size: 1.5rem;
+}

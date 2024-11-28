@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Student Dashboard</h2>
+<p>Welcome, {{ username }}!</p>
+<a href="{{ url_for('attendance.view_student_attendance') }}">View Attendance Records</a>
+{% endblock %}

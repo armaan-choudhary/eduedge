@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Assign Grades</h2>
+<form method="POST">
+    <label for="user_id">Student:</label>
+    <select id="user_id" name="user_id">
+        {% for student in students %}
+            <option value="{{ student.id }}">{{ student.username }}</option>
+        {% endfor %}
+    </select><br>
+    <label for="subject">Subject:</label>
+    <input type="text" id="subject" name="subject" required><br>
+    <label for="grade">Grade:</label>
+    <input type="text" id="grade" name="grade" required><br>
+    <button type="submit">Assign Grade</button>
+</form>
+{% endblock %}

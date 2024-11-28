@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Attendance Graph</h2>
+<form action="{{ url_for('dashboard.attendance_graph') }}" method="post">
+    <label for="date">Select Date:</label>
+    <input type="date" id="date" name="date" required>
+    <button type="submit">Show Attendance</button>
+</form>
+{% if plot_url %}
+    <h3>Attendance for {{ date }}</h3>
+    <img src="data:image/png;base64,{{ plot_url }}" alt="Attendance Graph">
+{% else %}
+    <p>No data to display. Please select a date.</p>
+{% endif %}
+<a href="{{ url_for('dashboard.dashboard') }}">Back to Dashboard</a>
+{% endblock %}
